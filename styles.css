@@ -21,3 +21,15 @@
 .education-item h4{font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.3;margin:0 0 5px}
 .education-item p{font-size:10px;line-height:1.75;color:#718078;margin:0}
 @media(max-width:680px){.education-grid{grid-template-columns:1fr;gap:30px}.education-item{grid-template-columns:62px 1fr}.nav{gap:14px}}
+
+
+/* Academic portrait hero */
+.hero-portrait-wrap{height:470px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(ellipse at 52% 43%,#e7eadf 0,#f0f0e8 48%,rgba(247,246,240,0) 75%);isolation:isolate}
+.portrait-halo{position:absolute;width:min(76%,390px);aspect-ratio:1;border:1px solid rgba(185,148,84,.58);border-radius:50%;box-shadow:0 0 0 18px rgba(185,148,84,.06),0 0 0 42px rgba(35,69,66,.035);z-index:-1}
+.hero-portrait{width:min(66%,310px);height:370px;object-fit:cover;object-position:center 28%;border-radius:48% 48% 8px 8px;border:7px solid rgba(255,255,255,.82);box-shadow:0 24px 60px rgba(20,44,43,.18);filter:saturate(.94)}
+.portrait-caption{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:12px;padding:12px 17px;background:rgba(255,255,255,.94);border:1px solid #e4e5dc;box-shadow:0 12px 30px rgba(20,44,43,.08);white-space:nowrap}
+.portrait-caption-mark{width:34px;height:34px;display:grid;place-items:center;background:var(--ink);color:var(--gold-light);font-family:var(--serif);font-size:14px}
+.portrait-caption strong,.portrait-caption small{display:block}.portrait-caption strong{font-family:var(--serif);font-size:13px;color:var(--ink)}.portrait-caption small{font-size:7px;letter-spacing:.12em;color:#7b877f;margin-top:4px}
+.portrait-accent{position:absolute;top:34px;right:8px;writing-mode:vertical-rl;font-size:8px;letter-spacing:.2em;color:#9b895e}
+@media(max-width:900px){.hero-portrait-wrap{height:390px}.hero-portrait{height:310px;width:min(66%,270px)}.portrait-accent{right:16px}}
+@media(max-width:600px){.hero-portrait-wrap{height:360px;margin-top:18px}.hero-portrait{height:285px;width:230px}.portrait-caption{bottom:13px;padding:9px 12px}.portrait-caption strong{font-size:11px}.portrait-caption small{font-size:6px}.portrait-accent{top:16px;right:8px;font-size:7px}}
